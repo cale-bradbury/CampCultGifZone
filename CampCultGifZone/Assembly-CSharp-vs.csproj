@@ -46,10 +46,25 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CampCult\Scripts\Creation\CCField.cs" />
-     <Compile Include="Assets\CampCult\Scripts\Creation\CCGroup.cs" />
-     <Compile Include="Assets\CampCult\Scripts\Creation\CCLine.cs" />
-     <Compile Include="Assets\CampCult\Scripts\Creation\CCRing.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Creation\ccCreateField.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Creation\ccCreateGroup.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Creation\ccCreateLine.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Creation\ccCreateRing.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Motion\ccAnimatePosition.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Motion\ccAnimateRotation.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Motion\ccAnimateScale.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Motion\ccGroupRotate.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Motion\ccGroupScale.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Motion\ccMove.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Motion\ccRandomPosition.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Motion\ccRandomRotation.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Motion\ccRandomScale.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Motion\ccRotate.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Motion\ccScale.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Motion\ccSinePosition.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Motion\ccSineRotation.cs" />
+     <Compile Include="Assets\CampCult\Scripts\Motion\ccSineScale.cs" />
+     <Compile Include="Assets\ccCreateGrid.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

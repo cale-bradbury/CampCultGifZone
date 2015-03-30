@@ -9,7 +9,7 @@ public class CaptureGifEditor : EditorWindow {
 	public int frames = 100;
 	public int frameDelay = 30;
 	public bool captureFrames = true;
-	public int captureUpscale = 2;
+	public int captureUpscale = 1;
 	public string capturePath = "Folder/Name";
 	int i = -1;
 	int c=0;
