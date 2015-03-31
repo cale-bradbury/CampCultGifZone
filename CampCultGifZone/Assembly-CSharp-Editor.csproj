@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Editor\CaptureGifEditor.cs" />
+     <None Include="Assets\CampCult\Shaders\TweenGradient.shader" />
+     <None Include="Assets\CampCult\Shaders\Kalidescope.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

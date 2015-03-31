@@ -69,6 +69,8 @@
      <Compile Include="Assets\CampCult\Scripts\Motion\ccSineRotation.cs" />
      <Compile Include="Assets\CampCult\Scripts\Motion\ccSineScale.cs" />
      <Compile Include="Assets\SlideManager.cs" />
+     <None Include="Assets\CampCult\Shaders\TweenGradient.shader" />
+     <None Include="Assets\CampCult\Shaders\Kalidescope.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
