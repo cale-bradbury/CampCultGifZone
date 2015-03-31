@@ -1,11 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CampCult\Shaders\TweenGradient.shader">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\CampCult\Shaders\Kalidescope.shader">
     <Files>
       <File FileName="Assets\CampCult\Scripts\Material\ccUVScroll.cs" Line="18" Column="6" />
       <File FileName="Assets\SlideManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\CampCult\Shaders\Gradient.shader" Line="1" Column="17" />
       <File FileName="Assets\CampCult\Shaders\TweenGradient.shader" Line="8" Column="30" />
+      <File FileName="Assets\CampCult\Shaders\Kalidescope.shader" Line="4" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
