@@ -15,14 +15,16 @@ public class ccCreateGroup : MonoBehaviour {
 	public int count = 5;
 	[HideInInspector]
 	public List<GameObject> all = new List<GameObject>();
+	
+	public delegate void OnRefresh();
+	public OnRefresh onRefresh;
+	public delegate void OnCreate(GameObject g);
+	public OnCreate onCreate;
 
 	// Use this for initialization
 	protected void Start () {
-		for(int i =0;i< count;i++){
-			GameObject g = getNew();
-			all.Add(g);
-			g.transform.localPosition = place(i);
-		}
+
+
 	}
 
 	virtual public Vector3 place(int i){
@@ -33,6 +35,7 @@ public class ccCreateGroup : MonoBehaviour {
 		for(int i =0;i< all.Count;i++){
 			all[i].transform.localPosition = place(i);
 		}
+		if(onRefresh!=null)onRefresh();
 	}
 
 	protected void Update(){
@@ -41,17 +44,19 @@ public class ccCreateGroup : MonoBehaviour {
 				if(all.Count-1<i){
 					all.Add(getNew());
 				}
-				all[i].transform.localPosition = place(i);
+				//all[i].transform.localPosition = place(i);
 			}
+			refresh();
 		}else if(all.Count>count){
 			for(int i = all.Count-1;i>=0;i--){
 				if(i>=count){
 					Destroy(all[i]);
 					all.RemoveAt(i);
 				}else{
-					all[i].transform.localPosition = place(i);
+					//all[i].transform.localPosition = place(i);
 				}
 			}
+			refresh();
 		}
 	}
 
@@ -65,6 +70,7 @@ public class ccCreateGroup : MonoBehaviour {
 			g = Instantiate(obj[(int)Random.Range(0,obj.Length)]) as GameObject;
 		}
 		g.transform.parent = transform;
+		if(onCreate!=null)onCreate(g);
 		return g;
 	}
 	
